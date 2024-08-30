@@ -1,0 +1,34 @@
+.portfolio-item .portfolio-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0;
+    transition: .5s;
+  }
+  
+  .portfolio-item:hover .portfolio-img {
+    bottom: 100%;
+  }
+  
+  .portfolio-item .portfolio-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    transition: .5s;
+  }
+  
+  .portfolio-item:hover .portfolio-text {
+    bottom: 0;
+  }
+
+  :host ::ng-deep .portfolio-text {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    transition: 0.3s ease;
+}
+
+:host ::ng-deep .portfolio-item:hover .portfolio-text {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}

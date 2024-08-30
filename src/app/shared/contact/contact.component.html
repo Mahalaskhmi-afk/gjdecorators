@@ -1,1 +1,60 @@
-<p>contact works!</p>
+<div class="container-fluid bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="d-flex flex-column justify-content-center bg-warning h-100 p-5">
+                    <div class="d-inline-flex border border-secondary p-4 mb-4">
+                        <i class="bi bi-building  fs-1 m-0 mr-3 px-3"></i>
+                        <div class="d-flex flex-column">
+                            <h4 class="text-secondary">Our Office</h4>
+                            <p class="m-0 text-white">#3 Jayanagar SouthEnd, Bengaluru, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-inline-flex border border-secondary p-4 mb-4">
+                        <i class="bi bi-envelope fs-1 m-0 mr-3 px-3"></i>
+                        <div class="d-flex flex-column">
+                            <h4 class="text-secondary">Email Us</h4>
+                            <p class="m-0 text-white">rajugjdecorator#64;gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-inline-flex border border-secondary p-4">
+                        <i class="bi bi-telephone fs-1 m-0 mr-3 px-3"></i>
+                        <div class="d-flex flex-column">
+                            <h4 class="text-secondary">Call Us</h4>
+                            <p class="m-0 text-white">+917349260179 , +918431741044</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-7 mb-5 my-lg-5 py-5 pl-lg-5">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control p-4" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
