@@ -9,5 +9,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  closeNavbar() {
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show');
+    }
+  }
 
 }

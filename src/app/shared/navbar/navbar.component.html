@@ -7,22 +7,24 @@
                         <span class="text-warning">GJ</span>Decorators
                     </h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler pr-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ml-auto d-flex justify-content-center w-100">
-                        <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
-                        <a routerLink="/about" routerLinkActive="active" class="nav-item nav-link">About</a>
-                        <a routerLink="/service" routerLinkActive="active" class="nav-item nav-link">Service</a>
-                        <a routerLink="/project" routerLinkActive="active" class="nav-item nav-link">Project</a>
-                        <a routerLink="/contact" routerLinkActive="active" class="nav-item nav-link">Contact</a>
+                        <a routerLink="/home" routerLinkActive="active" (click)="closeNavbar()" class="nav-item nav-link px-3" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                        <a routerLink="/about" routerLinkActive="active" (click)="closeNavbar()" class="nav-item nav-link px-3">About</a>
+                        <a routerLink="/service" routerLinkActive="active" (click)="closeNavbar()" class="nav-item nav-link px-3">Service</a>
+                        <a routerLink="/project" routerLinkActive="active" (click)="closeNavbar()" class="nav-item nav-link px-3">Project</a>
+                        <a routerLink="/contact" routerLinkActive="active" (click)="closeNavbar()" class="nav-item nav-link px-3">Contact</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </div>
+
+
 
 <div class="container-fluid bg-white mb-4" style="padding-top:80px;">
     <div class="container">
