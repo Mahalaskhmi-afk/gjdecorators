@@ -1,0 +1,12 @@
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-yellow {
+    color: #ffbf00;
+}
