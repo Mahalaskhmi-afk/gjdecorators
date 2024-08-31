@@ -8,12 +8,8 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent{
-  // ngAfterViewInit(): void {
-  //   // Ensure the carousel functionality is initialized
-  //   const carouselElement = document.getElementById('header-carousel');
-  //   if (carouselElement) {
-  //     new bootstrap.Carousel(carouselElement);
-  //   }
-  // }
 
+  ngOnInit(): void {
+    window.scrollTo(1000,0);
+  }
 }

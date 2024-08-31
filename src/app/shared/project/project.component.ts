@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './project.component.css'
 })
 export class ProjectComponent {
+
+  ngOnInit(): void {
+    window.scrollTo(1000,0);
+  }
+  
   filterProjects(filter: string): void {
     const portfolioItems = document.querySelectorAll('.portfolio-item');
 
