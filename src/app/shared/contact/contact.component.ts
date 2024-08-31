@@ -30,24 +30,26 @@ export class ContactComponent implements OnInit {
 
   send() {
     if (this.contactForm.valid) {
+      // Extract form values
       const formValues = this.contactForm.value;
-  
+
+      // Send the email using EmailJS
       emailjs.send("service_pi74mtg", "template_x9zbb4k", {
         from_name: formValues.name,
-        to_name: "GJDecorators",
+        to_name: "Maha",
         from_email: formValues.email,
         subject: formValues.subject,
         message: formValues.message,
-      }, 'bYp6VvUxP7lwE6RwQ')
+      }, 'M5GWy78WBAk-sXQUX')  // Replace with your EmailJS user ID
       .then((result) => {
         console.log('Email sent successfully!', result.text);
         alert('Message sent successfully!');
-        this.contactForm.reset()
       }, (error) => {
         console.error('Failed to send email:', error.text);
         alert('Failed to send message, please try again.');
       });
+    } else {
+      alert('Please fill out all fields correctly.');
     }
   }
-  
 }

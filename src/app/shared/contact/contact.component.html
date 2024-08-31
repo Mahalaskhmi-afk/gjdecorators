@@ -37,31 +37,31 @@
                     <div id="success"></div>
                     <form [formGroup]="contactForm" (ngSubmit)="send()">
                         <div class="control-group">
-                            <input type="text" class="form-control p-3 p-lg-4" formControlName="name"
+                            <input type="text" class="form-control p-3 mb-3" formControlName="name"
                                 placeholder="Your Name" />
                             <p *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
                                 class="text-danger">Please enter your name</p>
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control p-3 p-lg-4" formControlName="email"
+                            <input type="email" class="form-control p-3 mb-3" formControlName="email"
                                 placeholder="Your Email" />
                             <p *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
                                 class="text-danger">Please enter a valid email</p>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control p-3 p-lg-4" formControlName="subject"
+                            <input type="text" class="form-control p-3 mb-3" formControlName="subject"
                                 placeholder="Subject" />
                             <p *ngIf="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched"
                                 class="text-danger">Please enter a subject</p>
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control p-3 p-lg-4" formControlName="message" rows="6"
+                            <textarea class="form-control p-3 mb-3" formControlName="message" rows="6"
                                 placeholder="Message"></textarea>
                             <p *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
                                 class="text-danger">Please enter your message</p>
                         </div>
                         <div>
-                            <button class="btn btn-warning py-3 px-4 px-lg-5" type="submit"
+                            <button class="btn btn-warning py-3 px-4 px-lg-5 mb-3" type="submit"
                                 [disabled]="contactForm.invalid">Send Message</button>
                         </div>
                     </form>
